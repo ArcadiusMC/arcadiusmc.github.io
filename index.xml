@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ArcadiusMC</title>
+    <link>https://arcadiusmc.net/</link>
+    <description>Recent content on ArcadiusMC</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 25 Feb 2024 02:21:54 +0200</lastBuildDate><atom:link href="https://arcadiusmc.net/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>History</title>
+      <link>https://arcadiusmc.net/wiki/history/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://arcadiusmc.net/wiki/history/</guid>
+      <description>&amp;amp;YAYAYYYASYYS HGUISTORY</description>
+    </item>
+    
+    <item>
+      <title>Frequently asked questions</title>
+      <link>https://arcadiusmc.net/wiki/faq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://arcadiusmc.net/wiki/faq/</guid>
+      <description>🔹 Are there any rules? Yes, there are some major rules. You can do /rules ingame.
+🔹 How do I start? Doing /wild will teleport you to a random location on the map. You may use this as many times as you want until you find your optimal location. But the command only works in Hazelguard.
+🔹 What is Hazelguard? Hazelguard is the spawn region. It is controlled by the administrator(s), where most major events will occur.</description>
+    </item>
+    
+    <item>
+      <title>Another part</title>
+      <link>https://arcadiusmc.net/wiki/subsect/test/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://arcadiusmc.net/wiki/subsect/test/</guid>
+      <description>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, corrupti. Quo reiciendis cumque minima maxime maiores modi iste, culpa dolorem accusamus porro vel esse blanditiis nobis ipsam molestiae debitis sequi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, corrupti. Quo reiciendis cumque minima maxime maiores modi iste, culpa dolorem accusamus porro vel esse blanditiis nobis ipsam molestiae debitis sequi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, corrupti. Quo reiciendis cumque minima maxime maiores modi iste, culpa dolorem accusamus porro vel esse blanditiis nobis ipsam molestiae debitis sequi!</description>
+    </item>
+    
+    <item>
+      <title>My First Post</title>
+      <link>https://arcadiusmc.net/posts/firstpost/</link>
+      <pubDate>Sun, 25 Feb 2024 02:21:54 +0200</pubDate>
+      
+      <guid>https://arcadiusmc.net/posts/firstpost/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus</description>
+    </item>
+    
+    <item>
+      <title>Post 1</title>
+      <link>https://arcadiusmc.net/test/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://arcadiusmc.net/test/</guid>
+      <description>Hello, world! ajsdkjsdhasd
+asdlkdfjldsfj
+lskdfjlskdfj
+lorem</description>
+    </item>
+    
+  </channel>
+</rss>

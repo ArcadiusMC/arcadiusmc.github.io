@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://arcadiusmc.net/wiki/history/</loc>
+  </url><url>
+    <loc>https://arcadiusmc.net/wiki/faq/</loc>
+  </url><url>
+    <loc>https://arcadiusmc.net/wiki/subsect/test/</loc>
+  </url><url>
+    <loc>https://arcadiusmc.net/wiki/commands/</loc>
+  </url><url>
+    <loc>https://arcadiusmc.net/wiki/</loc>
+  </url><url>
+    <loc>https://arcadiusmc.net/</loc>
+    <lastmod>2024-02-25T02:21:54+02:00</lastmod>
+  </url><url>
+    <loc>https://arcadiusmc.net/posts/firstpost/</loc>
+    <lastmod>2024-02-25T02:21:54+02:00</lastmod>
+  </url><url>
+    <loc>https://arcadiusmc.net/posts/</loc>
+    <lastmod>2024-02-25T02:21:54+02:00</lastmod>
+  </url><url>
+    <loc>https://arcadiusmc.net/categories/</loc>
+  </url><url>
+    <loc>https://arcadiusmc.net/test/</loc>
+  </url><url>
+    <loc>https://arcadiusmc.net/tags/</loc>
+  </url>
+</urlset>
