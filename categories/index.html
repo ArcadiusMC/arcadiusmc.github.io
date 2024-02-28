@@ -8,32 +8,37 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-<link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
 <link rel="manifest" href="/favicon/site.webmanifest">
 <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
-<title itemprop="name"> Categories | ArcadiusMC 
-</title>
-<meta name="description" content="Arcadius Minecraft Server" />
+<title itemprop="name"> Categories | ArcadiusMC </title>
+<meta name="description" content="ArcadiusMC website" />
 <meta property="og:title" content="Categories | ArcadiusMC" />
 <meta name="twitter:title" content="Categories | ArcadiusMC" />
 <meta itemprop="name" content="Categories | ArcadiusMC" />
 <meta name="application-name" content="Categories | ArcadiusMC" />
 <meta property="og:description"
-      content="Arcadius Minecraft Server" />
+      content="ArcadiusMC website" />
 <meta property="og:site_name" content="ArcadiusMC" />
-<meta property="og:url" content="https://arcadiusmc.net/categories/" />
+<meta property="og:url" content="/categories/" />
 <meta property="og:locale" content="en">
-<meta property="og:image" content="/images/tailbliss-cover.png" />
-<meta property="og:image:secure_url" content="https://arcadiusmc.net/images/tailbliss-cover.png" />
+<meta property="og:image" content="/../assets/images/posts/author.webp" />
+<meta property="og:image:secure_url" content="../assets/images/posts/author.webp" />
 <meta property="og:type" content="article" />
 
-<script>document.documentElement.classList.add('dark');</script>
+<script>
+    
+    if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+    } else {
+        document.documentElement.classList.remove('dark')
+    }
+</script>
 
 
 
-<link rel="stylesheet" href="/css/style.min.9f9af75d61b7eced61e437179bc4fe55fa97b20ca433c797f9d707012ef32121.css" integrity="sha256-n5r3XWG37O1h5DcXm8T+VfqXsgykM8eX+dcHAS7zISE=" />
+<link rel="stylesheet" href="/css/style.min.095989c2b6c00a53f789ae02e3ff496156a1003f09d86036b60dc648f0f23b7d.css" integrity="sha256-CVmJwrbAClP3ia4C4/9JYVahAD8J2GA2tg3GSPDyO30=" />
 
 </head>
 
@@ -43,12 +48,11 @@
          class="flex flex-col max-w-full px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
         <div class="flex flex-row items-center justify-between p-4">
             <a href="/" class="flex text-gray-100 transition duration-1000 ease-in-out group">
-                <img src="/favicon/favicon-64x64.png"
+                <img src="/favicon/favicon-32x32.png"
                      class="transition-opacity h-9 w-9 group-hover:opacity-50 group-focus:opacity-70"
                      alt="ArcadiusMC Logo" />
                 <div
-                    style="font-family: 'Trajan Pro', sans-serif !important;"
-                    class="mt-1 ml-3 text-xl font-black tracking-tight text-gray-100 transition-colors group-hover:text-gray-400/60">
+                     class="trajanpro mt-1 ml-3 text-xl font-black tracking-tight text-gray-100 transition-colors group-hover:text-gray-400/60">
                     ArcadiusMC</div>
             </a>
             <button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="open = !open" role="navigation" aria-expanded="false" aria-label="Main" aria-controls="menuItems">
@@ -67,36 +71,29 @@
             
             
             <a class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-700 focus:outline-none focus:shadow-outline"
-                href="https://store.arcadiusmc.net" title="Store">
+                target='_blank' href="https://store.arcadiusmc.net" title="Store">
                 Store
             </a>
             
             
             
             <a class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-700 focus:outline-none focus:shadow-outline"
-                href="https://arcadiusmc.net/posts/" title="Updates">
-                Updates
+                target='_blank' href="https://map.arcadiusmc.net" title="World Map">
+                World Map
             </a>
             
             
             
             <a class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-700 focus:outline-none focus:shadow-outline"
-                href="https://arcadiusmc.net/wiki/" title="Wiki">
-                Wiki
+                target='_self' href="/news/" title="News">
+                News
             </a>
             
             
             
             <a class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-700 focus:outline-none focus:shadow-outline"
-                href="https://webmap.arcadiusmc.net" title="Map">
-                Map
-            </a>
-            
-            
-            
-            <a class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-700 focus:outline-none focus:shadow-outline"
-                href="https://discord.arcadiusmc.net" title="Discord">
-                Discord
+                target='_self' href="/wiki/" title="Player Wiki">
+                Player Wiki
             </a>
             
             
@@ -107,13 +104,13 @@
     
 <main>
     <article>
-        <header class="mb-4 bg-primary-600">
-            <span class="py-96">
-                <h1 class="py-16 text-5xl font-black text-center text-white capitalize">
-                    Categories
-                </h1>
-            </span>
-        </header>
+        <header class="index-bg wikihead-mb-4 bg-primary-600">
+  <span class="py-96">
+      <h1 class="title-bg-backdrop py-16 text-5xl font-black text-center text-white capitalize">
+          Categories
+      </h1>
+  </span>
+</header>
         
         <div class="mx-auto text-gray-900 max-w-7xl dark:text-gray-50">
     <div class="px-4 not-prose">
@@ -131,13 +128,28 @@
 </main>
 
     
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+<script src="/js/darkmode.js" defer></script>
 <footer class="bg-gray-900">
     <div class="max-w-md px-4 py-12 mx-auto overflow-hidden sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
         <nav class="flex flex-wrap justify-center -mx-5 -my-2" aria-label="Footer">
             
+            <div class="px-5 py-2">
+                <a target='_blank' href="https://store.arcadiusmc.net" class="text-base text-gray-400 hover:text-gray-300">Store</a>
+            </div>
+            
+            <div class="px-5 py-2">
+                <a target='_blank' href="https://map.arcadiusmc.net" class="text-base text-gray-400 hover:text-gray-300">World Map</a>
+            </div>
+            
+            <div class="px-5 py-2">
+                <a target='_self' href="/news/" class="text-base text-gray-400 hover:text-gray-300">News</a>
+            </div>
+            
         </nav>
         <div class="flex justify-center mt-8 space-x-6">
-            <a href="https://instagram.com/arcadiusmc" class="text-gray-400 hover:text-gray-300">
+            <a target="_blank" href="https://instagram.com/arcadiusmc" class="text-gray-400 hover:text-gray-300">
                 <span class="sr-only">Instagram</span>
                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path fill-rule="evenodd"
@@ -146,7 +158,7 @@
                 </svg>
             </a>
 
-            <a href="https://twitter.com/serverarcadius" class="text-gray-400 hover:text-gray-300">
+            <a target="_blank" href="https://twitter.com/serverarcadius" class="text-gray-400 hover:text-gray-300">
                 <span class="sr-only">Twitter</span>
                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path
@@ -154,7 +166,7 @@
                 </svg>
             </a>
 
-            <a href="https://github.com/ArcadiusMC" class="text-gray-400 hover:text-gray-300">
+            <a target="_blank" href="https://github.com/ArcadiusMC" class="text-gray-400 hover:text-gray-300">
                 <span class="sr-only">GitHub</span>
                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path fill-rule="evenodd"
@@ -163,24 +175,24 @@
                 </svg>
             </a>
 
-            <a href="https://pinterest.com/ArcadiusMC" class="text-gray-400 hover:text-gray-300">
+            <a target="_blank" href="https://pinterest.com/ArcadiusMC" class="text-gray-400 hover:text-gray-300">
                 <span class="sr-only">Pinterest</span>
                 <img class="w-6 h-6" src="/images/pinterest-logo.svg">
             </a>
 
-            <a href="https://youtube.com/@ArcadiusMC" class="text-gray-400 hover:text-gray-300">
+            <a target="_blank" href="https://youtube.com/@ArcadiusMC" class="text-gray-400 hover:text-gray-300">
                 <span class="sr-only">Youtube</span>
                 <img class="w-6 h-6" src="/images/youtube-logo.svg">
             </a>
 
-            <a href="https://discord.arcadiusmc.net/" class="text-gray-400 hover:text-gray-300">
+            <a target="_blank" href="https://discord.arcadiusmc.net/" class="text-gray-400 hover:text-gray-300">
                 <span class="sr-only">Youtube</span>
                 <img class="w-6 h-6" src="/images/discord-logo.svg">
             </a>
         </div>
         <p class="mt-8 text-base text-center text-gray-400">&copy; 2024
-            ArcadiusMC. All rights
-            reserved.</p>
+            ArcadiusMC. All rights reserved.
+        </p>
     </div>
 </footer>
 </body>

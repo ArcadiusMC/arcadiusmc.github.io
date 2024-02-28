@@ -8,34 +8,37 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-<link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
 <link rel="manifest" href="/favicon/site.webmanifest">
 <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
-<title itemprop="name"> Player Wiki | ArcadiusMC 
-</title>
-<meta name="description" content="General information about the in-game features on the server.
-" />
+<title itemprop="name"> Player Wiki | ArcadiusMC </title>
+<meta name="description" content="ArcadiusMC website" />
 <meta property="og:title" content="Player Wiki | ArcadiusMC" />
 <meta name="twitter:title" content="Player Wiki | ArcadiusMC" />
 <meta itemprop="name" content="Player Wiki | ArcadiusMC" />
 <meta name="application-name" content="Player Wiki | ArcadiusMC" />
 <meta property="og:description"
-      content="General information about the in-game features on the server.
-" />
+      content="ArcadiusMC website" />
 <meta property="og:site_name" content="ArcadiusMC" />
-<meta property="og:url" content="https://arcadiusmc.net/wiki/" />
+<meta property="og:url" content="/wiki/" />
 <meta property="og:locale" content="en">
-<meta property="og:image" content="/images/tailbliss-cover.png" />
-<meta property="og:image:secure_url" content="https://arcadiusmc.net/images/tailbliss-cover.png" />
+<meta property="og:image" content="/../assets/images/posts/author.webp" />
+<meta property="og:image:secure_url" content="../assets/images/posts/author.webp" />
 <meta property="og:type" content="article" />
 
-<script>document.documentElement.classList.add('dark');</script>
+<script>
+    
+    if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+    } else {
+        document.documentElement.classList.remove('dark')
+    }
+</script>
 
 
 
-<link rel="stylesheet" href="/css/style.min.9f9af75d61b7eced61e437179bc4fe55fa97b20ca433c797f9d707012ef32121.css" integrity="sha256-n5r3XWG37O1h5DcXm8T+VfqXsgykM8eX+dcHAS7zISE=" />
+<link rel="stylesheet" href="/css/style.min.095989c2b6c00a53f789ae02e3ff496156a1003f09d86036b60dc648f0f23b7d.css" integrity="sha256-CVmJwrbAClP3ia4C4/9JYVahAD8J2GA2tg3GSPDyO30=" />
 
 </head>
 
@@ -45,12 +48,11 @@
          class="flex flex-col max-w-full px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
         <div class="flex flex-row items-center justify-between p-4">
             <a href="/" class="flex text-gray-100 transition duration-1000 ease-in-out group">
-                <img src="/favicon/favicon-64x64.png"
+                <img src="/favicon/favicon-32x32.png"
                      class="transition-opacity h-9 w-9 group-hover:opacity-50 group-focus:opacity-70"
                      alt="ArcadiusMC Logo" />
                 <div
-                    style="font-family: 'Trajan Pro', sans-serif !important;"
-                    class="mt-1 ml-3 text-xl font-black tracking-tight text-gray-100 transition-colors group-hover:text-gray-400/60">
+                     class="trajanpro mt-1 ml-3 text-xl font-black tracking-tight text-gray-100 transition-colors group-hover:text-gray-400/60">
                     ArcadiusMC</div>
             </a>
             <button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="open = !open" role="navigation" aria-expanded="false" aria-label="Main" aria-controls="menuItems">
@@ -69,36 +71,29 @@
             
             
             <a class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-700 focus:outline-none focus:shadow-outline"
-                href="https://store.arcadiusmc.net" title="Store">
+                target='_blank' href="https://store.arcadiusmc.net" title="Store">
                 Store
             </a>
             
             
             
             <a class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-700 focus:outline-none focus:shadow-outline"
-                href="https://arcadiusmc.net/posts/" title="Updates">
-                Updates
+                target='_blank' href="https://map.arcadiusmc.net" title="World Map">
+                World Map
             </a>
             
             
             
             <a class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-700 focus:outline-none focus:shadow-outline"
-                href="https://arcadiusmc.net/wiki/" title="Wiki">
-                Wiki
+                target='_self' href="/news/" title="News">
+                News
             </a>
             
             
             
             <a class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-700 focus:outline-none focus:shadow-outline"
-                href="https://webmap.arcadiusmc.net" title="Map">
-                Map
-            </a>
-            
-            
-            
-            <a class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-700 focus:outline-none focus:shadow-outline"
-                href="https://discord.arcadiusmc.net" title="Discord">
-                Discord
+                target='_self' href="/wiki/" title="Player Wiki">
+                Player Wiki
             </a>
             
             
@@ -107,55 +102,75 @@
     </div>
 </div>
     
-<article>
-  <header class="mb-4 bg-primary-600">
-    <span class="py-96">
-      <h1 class="py-16 text-5xl font-black text-center text-white capitalize">
-        Player Wiki
+<main>
+    <article>
+        <header class="index-bg wikihead-mb-4 bg-primary-600">
+  <span class="py-96">
+      <h1 class="title-bg-backdrop py-16 text-5xl font-black text-center text-white capitalize">
+          Player Wiki
       </h1>
-    </span>
-  </header>
-  <div class="titlebar max-w-4xl mx-auto mt-8 mb-2">
-    <aside class="sidenavbar">
-      
-<a class="sidebar-href" href="/wiki/history/"><p class="sidebar-p">History</p></a>
-
-<a class="sidebar-href" href="/wiki/faq/"><p class="sidebar-p">Frequently asked questions</p></a>
-
-<a class="sidebar-href" href="/wiki/subsect/test/"><p class="sidebar-p">Another part</p></a>
-
-<a class="sidebar-href" href="/wiki/commands/"><p class="sidebar-p">Command Wiki</p></a>
-
-    </aside>
-
-    
-    <main style="flex-grow: 2 !important; flex: content;" class="max-w-2xl px-6 pt-6 pb-16 mx-auto prose dark:prose-invert dark:text-white">
-      <p>Haiiii :333</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, corrupti. Quo reiciendis cumque minima maxime maiores modi iste, culpa dolorem accusamus porro vel esse blanditiis nobis ipsam molestiae debitis sequi!</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, corrupti. Quo reiciendis cumque minima maxime maiores modi iste, culpa dolorem accusamus porro vel esse blanditiis nobis ipsam molestiae debitis sequi!</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, corrupti. Quo reiciendis cumque minima maxime maiores modi iste, culpa dolorem accusamus porro vel esse blanditiis nobis ipsam molestiae debitis sequi!</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, corrupti. Quo reiciendis cumque minima maxime maiores modi iste, culpa dolorem accusamus porro vel esse blanditiis nobis ipsam molestiae debitis sequi!</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, corrupti. Quo reiciendis cumque minima maxime maiores modi iste, culpa dolorem accusamus porro vel esse blanditiis nobis ipsam molestiae debitis sequi!</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, corrupti. Quo reiciendis cumque minima maxime maiores modi iste, culpa dolorem accusamus porro vel esse blanditiis nobis ipsam molestiae debitis sequi!</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, corrupti. Quo reiciendis cumque minima maxime maiores modi iste, culpa dolorem accusamus porro vel esse blanditiis nobis ipsam molestiae debitis sequi!</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, corrupti. Quo reiciendis cumque minima maxime maiores modi iste, culpa dolorem accusamus porro vel esse blanditiis nobis ipsam molestiae debitis sequi!</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, corrupti. Quo reiciendis cumque minima maxime maiores modi iste, culpa dolorem accusamus porro vel esse blanditiis nobis ipsam molestiae debitis sequi!</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, corrupti. Quo reiciendis cumque minima maxime maiores modi iste, culpa dolorem accusamus porro vel esse blanditiis nobis ipsam molestiae debitis sequi!</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, corrupti. Quo reiciendis cumque minima maxime maiores modi iste, culpa dolorem accusamus porro vel esse blanditiis nobis ipsam molestiae debitis sequi!</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, corrupti. Quo reiciendis cumque minima maxime maiores modi iste, culpa dolorem accusamus porro vel esse blanditiis nobis ipsam molestiae debitis sequi!</p>
-
-    </main>
+  </span>
+</header>
+        <div class="wiki-container">
+            <div x-data="{ sidebarOpen: false }" class="wikisidebar dark:prose-invert dark:text-white">
+  
+  <div class="flex flex-row items-center justify-between p-4">
+    <button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="sidebarOpen = !sidebarOpen" role="navigation" aria-expanded="false" aria-label="Main" aria-controls="menuItems">
+        <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+            <path x-show="!sidebarOpen" fill-rule="evenodd" d="M3  5a1 1 0 011-1h12a1 1 0 110  2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110  2H4a1 1 0 01-1-1z M3 15a1 1 0 011-1h12a1 1 0 110  2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+            <path x-show="sidebarOpen" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" style="display: none;"></path>
+        </svg>
+    </button>
   </div>
-</article>
+
+  <div :class="{'sidebar-shown': sidebarOpen, 'sidebar-hidden': !sidebarOpen}">
+    <b><a href="/wiki/">Player Wiki</a></b>
+    <hr>
 
     
+    <a class="sidebar-href" href="/wiki/history/"><p class="sidebar-p">History</p></a>
+    
+    <a class="sidebar-href" href="/wiki/faq/"><p class="sidebar-p">Frequently asked questions</p></a>
+    
+  </div>
+</div>
+            <div class="wikicontent max-w-2xl px-6 mx-auto mt-6 prose dark:prose-invert dark:text-white"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, quis. Facilis ea eligendi recusandae saepe, cupiditate blanditiis sed similique, temporibus nobis impedit minus quis autem. Accusantium debitis delectus rem laudantium.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, quis. Facilis ea eligendi recusandae saepe, cupiditate blanditiis sed similique, temporibus nobis impedit minus quis autem. Accusantium debitis delectus rem laudantium.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, quis. Facilis ea eligendi recusandae saepe, cupiditate blanditiis sed similique, temporibus nobis impedit minus quis autem. Accusantium debitis delectus rem laudantium.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, quis. Facilis ea eligendi recusandae saepe, cupiditate blanditiis sed similique, temporibus nobis impedit minus quis autem. Accusantium debitis delectus rem laudantium.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, quis. Facilis ea eligendi recusandae saepe, cupiditate blanditiis sed similique, temporibus nobis impedit minus quis autem. Accusantium debitis delectus rem laudantium.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, quis. Facilis ea eligendi recusandae saepe, cupiditate blanditiis sed similique, temporibus nobis impedit minus quis autem. Accusantium debitis delectus rem laudantium.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, quis. Facilis ea eligendi recusandae saepe, cupiditate blanditiis sed similique, temporibus nobis impedit minus quis autem. Accusantium debitis delectus rem laudantium.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, quis. Facilis ea eligendi recusandae saepe, cupiditate blanditiis sed similique, temporibus nobis impedit minus quis autem. Accusantium debitis delectus rem laudantium.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, quis. Facilis ea eligendi recusandae saepe, cupiditate blanditiis sed similique, temporibus nobis impedit minus quis autem. Accusantium debitis delectus rem laudantium.</p>
+</div>
+        </div>
+    </article>
+</main>
+
+    
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+<script src="/js/darkmode.js" defer></script>
 <footer class="bg-gray-900">
     <div class="max-w-md px-4 py-12 mx-auto overflow-hidden sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
         <nav class="flex flex-wrap justify-center -mx-5 -my-2" aria-label="Footer">
             
+            <div class="px-5 py-2">
+                <a target='_blank' href="https://store.arcadiusmc.net" class="text-base text-gray-400 hover:text-gray-300">Store</a>
+            </div>
+            
+            <div class="px-5 py-2">
+                <a target='_blank' href="https://map.arcadiusmc.net" class="text-base text-gray-400 hover:text-gray-300">World Map</a>
+            </div>
+            
+            <div class="px-5 py-2">
+                <a target='_self' href="/news/" class="text-base text-gray-400 hover:text-gray-300">News</a>
+            </div>
+            
         </nav>
         <div class="flex justify-center mt-8 space-x-6">
-            <a href="https://instagram.com/arcadiusmc" class="text-gray-400 hover:text-gray-300">
+            <a target="_blank" href="https://instagram.com/arcadiusmc" class="text-gray-400 hover:text-gray-300">
                 <span class="sr-only">Instagram</span>
                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path fill-rule="evenodd"
@@ -164,7 +179,7 @@
                 </svg>
             </a>
 
-            <a href="https://twitter.com/serverarcadius" class="text-gray-400 hover:text-gray-300">
+            <a target="_blank" href="https://twitter.com/serverarcadius" class="text-gray-400 hover:text-gray-300">
                 <span class="sr-only">Twitter</span>
                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path
@@ -172,7 +187,7 @@
                 </svg>
             </a>
 
-            <a href="https://github.com/ArcadiusMC" class="text-gray-400 hover:text-gray-300">
+            <a target="_blank" href="https://github.com/ArcadiusMC" class="text-gray-400 hover:text-gray-300">
                 <span class="sr-only">GitHub</span>
                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path fill-rule="evenodd"
@@ -181,24 +196,24 @@
                 </svg>
             </a>
 
-            <a href="https://pinterest.com/ArcadiusMC" class="text-gray-400 hover:text-gray-300">
+            <a target="_blank" href="https://pinterest.com/ArcadiusMC" class="text-gray-400 hover:text-gray-300">
                 <span class="sr-only">Pinterest</span>
                 <img class="w-6 h-6" src="/images/pinterest-logo.svg">
             </a>
 
-            <a href="https://youtube.com/@ArcadiusMC" class="text-gray-400 hover:text-gray-300">
+            <a target="_blank" href="https://youtube.com/@ArcadiusMC" class="text-gray-400 hover:text-gray-300">
                 <span class="sr-only">Youtube</span>
                 <img class="w-6 h-6" src="/images/youtube-logo.svg">
             </a>
 
-            <a href="https://discord.arcadiusmc.net/" class="text-gray-400 hover:text-gray-300">
+            <a target="_blank" href="https://discord.arcadiusmc.net/" class="text-gray-400 hover:text-gray-300">
                 <span class="sr-only">Youtube</span>
                 <img class="w-6 h-6" src="/images/discord-logo.svg">
             </a>
         </div>
         <p class="mt-8 text-base text-center text-gray-400">&copy; 2024
-            ArcadiusMC. All rights
-            reserved.</p>
+            ArcadiusMC. All rights reserved.
+        </p>
     </div>
 </footer>
 </body>
